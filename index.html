@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Addidix's personal webpage">
+    <title>Addidix</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/title.js"></script>
+    <script defer src="js/scroll.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body onload="setTitle('Addidix ')">
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="title">
+        <div class="hidden">
+            <h1 id="title">Addidix</h1>
+            <script>
+                function addFace(id, text) {
+                    const faces = [
+                        `( ͡° ͜ʖ ͡°)`,
+                        `¯\_(ツ)_/¯`,
+                        `ಠ_ಠ`,
+                        `ಠ‿ಠ`,
+                        `ಠ⌣ಠ`,
+                        `ಠ╭╮ಠ`,
+                        `ಠoಠ`,
+                        `ಠ~ಠ`,
+                        `ಠ‿↼`,
+                        `ಠ_ృ`,
+                        `◉_◉`,
+                        `◔_◔`,
+                        `◕‿↼`,
+                        `◕‿◕`,
+                        `☉_☉`,
+                        `☜(⌒▽⌒)☞`,
+                        `ლ(´ڡ\`ლ)`,
+                        `ᕕ( ᐛ )ᕗ`,
+                        `ᕙ(⇀‸↼‶)ᕗ`,
+                        `ᕦ(ò_óˇ)ᕤ`,
+                        `ᶘ ᵒᴥᵒᶅ`,
+                        `(⌐■_■)`,
+                        `(¬‿¬)`,
+                        `(¬_¬)`,
+                        `(°ロ°)☝`,
+                        `(´・ω・)っ由`,
+                        `(ó ì_í)=óò=(ì_í ò)`,
+                        `(ʘᗩʘ')`,
+                        `(͡° ͜ʖ ͡°)`,
+                        `(ಠ_ರೃ)`,
+                        `(ಠ⌣ಠ)`,
+                        `(ಠ‿↼)`,
+                        `(ಠ_ృ)`,
+                        `(ಥ_ಥ)`,
+                        `(ಥ﹏ಥ)`,
+                        `(ง ͠° ͟ل͜ ͡°)ง`,
+                        `(ง ͡ʘ ͜ʖ ͡ʘ)ง`,
+                        `(ง •̀_•́)ง`,
+                        `(ง'̀-'́)ง`,
+                        `(ง°ل͜°)ง`,
+                        `(ง⌐□ل͜□)ง`,
+                        `(ღ˘⌣˘ღ)`,
+                        `(ᵔᴥᵔ)`,
+                        `(•ω•)`,
+                        `(•◡•)/`,
+                        `(⊙ω⊙)`,
+                        `(⌐■_■)`,
+                        `(─‿‿─)`,
+                        `(╯°□°）╯︵ ┻━┻`,
+                        `(◕‿◕✿)`,
+                        `(☞ﾟ∀ﾟ)☞`,
+                        `(づ｡◕‿‿◕｡)づ`,
+                        `(ノಠ益ಠ)ノ彡┻━┻`,
+                        `(ノ・∀・)ノ`,
+                        `(；一_一)`,
+                        `(｀◔ ω ◔´)`,
+                        `(¬_¬)`,
+                        `(¬º-°)`,
+                    ];
+    
+                    const face = faces[Math.floor(Math.random() * faces.length)];
+                    
+                    document.getElementById(id).innerHTML = text + ' ' + face;
+                }
+                setInterval(addFace, 2500, 'title', 'Addidix');
+            </script>
+        </div>
+    </div>
+
+    <div class="cards" id="projects">
+        <div class="card hidden">
+            <div class="img-wrapper">
+                <img src="public/cards/1.jpeg" alt="" class="card-image">
+            </div>
+            <div class="text-wrapper">
+                <h2 class="card-title">
+                    Empyrean
+                </h2>
+                <p class="card-desc">
+                    Easy to use and open-source stealer that's super effective
+                </p>
+            </div>
+            <div class="languages">
+                <ul>
+                    <li class="language">
+                        <i class="fab fa-python"></i>
+                    </li>
+            </div>
+        </div>
+        <div class="card hidden">
+            <div class="img-wrapper">
+                <img src="public/cards/2.jpeg" alt="" class="card-image">
+            </div>
+            <div class="text-wrapper">
+                <h2 class="card-title">
+                    Paste
+                </h2>
+                <p class="card-desc">
+                    A simple string sharing site with a beautiful UI
+                </p>
+            </div>
+            <div class="languages">
+                <ul>
+                    <li class="language">
+                        <i class="fab fa-node-js"></i>
+                    </li>
+                    <li class="language">
+                        <i class="fab fa-sass"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card hidden">
+            <div class="img-wrapper">
+                <img src="public/cards/3.jpeg" alt="" class="card-image">
+            </div>
+            <div class="text-wrapper">
+                <h2 class="card-title">
+                    addidix.xyz
+                </h2>
+                <p class="card-desc">
+                    My personal website
+                </p>
+            </div>
+            <div class="languages">
+                <ul>
+                    <li class="language">
+                        <i class="fab fa-html5"></i>
+                    </li>
+                    <li class="language">
+                        <i class="fab fa-css3-alt"></i>
+                    </li>
+                    <li class="language">
+                        <i class="fab fa-js"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="text-wrapper hidden">
+            <h1>
+                About Me
+            </h1>
+            <p>
+                Young developer from the United States who loves to code and make cool stuff
+            </p>
+        </div>
+        <div class="lang-graph hidden">
+            <div class="bar blue basic" data-skill="Typescript"></div>
+            <div class="bar pink basic" data-skill="Sass"></div>
+            <div class="bar yellow intermediate" data-skill="Javascript"></div>
+            <div class="bar blue intermediate" data-skill="CSS3"></div>
+            <div class="bar orange intermediate" data-skill="HTML5"></div>
+            <div class="bar blue advanced" data-skill="Python"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <p class="rights">© 2022 Created By <b>Addidix</b>  All Rights Reserved.</p>
+             </div>
+             <div class="right-col">
+                <div class="social-media">
+                    <a href="https://github.com/addi00000" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://discord.gg/J8b8uzwjbS" target="_blank" class="social-icon">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://telegram.me/addi00000" target="_blank" class="social-icon">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+             </div>
+        </div>
+    </footer>
+</body>
+</html>
