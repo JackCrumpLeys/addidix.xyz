@@ -60,22 +60,99 @@ body {
 }
 
 .navbar {
-    /* stay center and  on top at all times */
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
 
-    /* layout */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    /* style */
-    color: var(--nav-text-color);
-    padding: 1rem 3rem;
+    height: 5rem;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid var(--footer-background-color);
     z-index: 100;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .menu .item {
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--nav-text-color);
+    cursor: pointer;
+}
+
+.navbar .menu .item:hover {
+    color: var(--body-text-color);
+}
+
+.navbar .menu .item.active {
+    color: var(--body-text-color);
+}
+
+.navbar .menu .item.active::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    height: 2px;
+    background-color: var(--body-text-color);
+}
+
+.navbar .menu .item.active:hover::after {
+    background-color: var(--body-text-color);
+}
+
+.navbar .menu .item.active:hover {
+    color: var(--body-text-color);
+}
+
+.navbar .menu .item:hover::after {
+    background-color: var(--body-text-color);
+}
+
+.navbar .menu .item:hover {
+    color: var(--body-text-color);
+}
+
+.navbar .menu .item::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    width: 0%;
+
+    height: 2px;
+    background-color: var(--body-text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .menu .item:hover::after {
+    width: 100%;
+}
+
+.navbar .menu .item.active::after {
+    width: 100%;
+}
+
+.navbar .menu .item.active:hover::after {
+    width: 100%;
+}
+
+.navbar .menu .item.active:hover {
+    color: var(--body-text-color);/*  */
 }
 
 .navbar a {
@@ -91,7 +168,6 @@ body {
 
 .navbar a:hover {
     transform: scale(1.1);
-    filter: brightness(1.5);
 }
 
 .title {
